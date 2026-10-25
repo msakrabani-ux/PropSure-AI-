@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body { @apply bg-slate-50 text-slate-800 antialiased; }
+  :focus-visible { outline: 2px solid #0d9488; outline-offset: 2px; }
+}
+
+@layer components {
+  .btn-primary { @apply inline-flex items-center justify-center rounded-lg bg-teal-600 px-5 py-2.5 font-semibold text-white shadow-sm transition hover:bg-teal-700; }
+  .btn-outline { @apply inline-flex items-center justify-center rounded-lg border border-navy-800 px-5 py-2.5 font-semibold text-navy-800 transition hover:bg-navy-800 hover:text-white; }
+  .input { @apply w-full rounded-lg border border-slate-300 bg-white px-3 py-2.5 text-sm text-slate-800 focus:border-teal-600 focus:ring-1 focus:ring-teal-600; }
+  .section { @apply mx-auto max-w-6xl px-4 py-14; }
+}
